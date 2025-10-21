@@ -1,5 +1,3 @@
-/* style-entry3.css */
-
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 html, body {
@@ -62,7 +60,6 @@ hr {
 
 .story { background-color: #28443c; }
 
-/* alternating rows */
 .story-flex {
   display: flex;
   flex-direction: row;
@@ -99,7 +96,6 @@ hr {
   border-radius: 4px;
 }
 
-/* type */
 .headline {
   margin: 8px 16px;
   font-family: "Shizuru", system-ui;
@@ -113,7 +109,6 @@ hr {
   color: #ffc4b3;
 }
 
-/* playlist */
 .section-label {
   margin-bottom: 12px;
   font-family: "Almendra SC", serif;
