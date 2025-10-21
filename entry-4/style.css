@@ -1,8 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 html, body {
   background-color: #28443c;
@@ -24,7 +20,7 @@ html, body {
 
 .info {
   font-family: "Shizuru", system-ui;
-  font-size: 40px;
+  font-size: 45px;
   color: #ffc4b3;
 }
 
@@ -43,16 +39,12 @@ hr {
 
 .content-layout {
   display: flex;
-  flex-direction: row;
+  gap: 25px;
   justify-content: space-between;
-  gap: 48px;
   margin-top: 32px;
 }
 
-.main-column {
-  flex: 3;
-}
-
+.main-column { flex: 3; }
 .playlist-column {
   flex: 1;
   padding-left: 24px;
@@ -62,40 +54,48 @@ hr {
 .stories {
   display: flex;
   flex-direction: column;
-  justify-content:left;
+  align-items: flex-start;
   gap: 48px;
 }
 
-.story {
-  background-color: #28443c;
-}
+.story { background-color: #28443c; }
 
 .story-flex {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   gap: 24px;
 }
 
-.story-flex.reverse {
-  flex-direction: row-reverse;
-}
-
 .story-text {
   flex: 1;
+  margin-top: -15px;
 }
 
-.story-media {
-  width: 50%;
-  min-width: 320px;
-}
-
-.story-media img {
+.story-flex {
   display: flex;
-  flex-direction:column;
-  justify-content:space-evenly;
-  width: 80%;
-  height: 80%;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.story-flex.reverse { flex-direction: row-reverse; }
+.story-text { flex: 1; }
+
+.story-media { width: 60%; min-width: 320px; }
+.story-media img { display: block;
+  width: 100%;
+  height: auto;
+  border: none;}
+
+.photo-row {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.photo-row img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
   border: none;
 }
 
@@ -116,17 +116,17 @@ hr {
 .section-label {
   margin-bottom: 12px;
   font-family: "Almendra SC", serif;
-  font-size: 50px;
+  font-size: 28px;
   text-transform: uppercase;
   color: #ffc4b3;
 }
 
 .tracks {
+  list-style-type: square;
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding-left: 16px;
-  list-style-type: square;
 }
 
 .tracks li {
@@ -140,4 +140,3 @@ hr {
   color: #ffc4b3;
   text-align: center;
 }
-

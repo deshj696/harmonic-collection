@@ -9,75 +9,87 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <head>
-
-  <title>The Sunday Chronicles — Entry Two</title>
-
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&family=Shizuru&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
+<body>
+
 </head>
 <body>
 
-  <header id="masthead">
+  <header id="masthead" class="page">
     <div class="masthead-top">
       <p class="info date">10/05</p>
+      <h1 class="title">THE SUNDAY CHRONICLES</h1>
       <p class="info weather">72°F</p>
     </div>
-    <h1 class="title">THE SUNDAY CHRONICLES</h1>
     <hr>
   </header>
 
-  <main>
-    <section class="stories">
+  <div class="page content-layout">
+    <main class="main-column">
+      <section class="stories">
 
-      <article class="story" id="izakaya">
-        <h2 class="headline">favorite japanese izakaya</h2>
-        <p class="copy">It was the second month of freshman year when me and my friends found this izakaya called Kenka near St Marks. It had vintage interior, dim lighting and really cool Japanese posters. It had loud conversations, a cotton candy machine and really good food; we were sold. This was our spot.</p>
+        <article class="story" id="izakaya">
+          <div class="story-flex">
+            <div class="story-text">
+              <h2 class="headline">favorite japanese izakaya</h2>
+              <p class="copy">It was the second month of freshman year when me and my friends found this izakaya called Kenka near St Marks. It had vintage interior, dim lighting and really cool Japanese posters. It had loud conversations, a cotton candy machine and really good food; we were sold. This was our spot.</p>
+            </div>
+            <figure class="story-media">
+              <img src="../archive/IMG_1558.JPG" alt="Inside Kenka izakaya">
+            </figure>
+          </div>
+        </article>
 
-      </article>
+        <article class="story" id="girls-night">
+          <div class="story-flex reverse">
+            <figure class="story-media">
+              <img src="../archive/IMG_1561.JPG" alt="Hot udon bowl">
+            </figure>
+            <div class="story-text">
+              <h2 class="headline">girls night out</h2>
+              <p class="copy">So off we went to our favorite place on a Sunday night. They have a waitlist sheet outside you're supposed to put your name down on, and the lady who works there is ruthless with it. If you miss your name being called out, she scratches off your name within seconds. We were seated within half an hour, which was definitely not the worst amount of time we've waited for a bowl of their steaming hot udon.</p>
+            </div>
+          </div>
+        </article>
 
-      <article class="story" id="girls-night">
-        <h2 class="headline">girls night out</h2>
-        <p class="copy">So off we went to our favorite place on a Sunday night. They have a waitlist sheet outside you're supposed to put your name down on, and the lady who works there is ruthless with it. If you miss your name being called out, she scratches off your name within seconds. We were seated within half an hour, which was definitely not the worst amount of time we've waited for a bowl of their steaming hot udon.</p>
-     
-      </article>
+        <article class="story" id="udon">
+          <div class="story-flex">
+            <div class="story-text">
+              <h2 class="headline">7$ udon in manhattan?</h2>
+              <p class="copy">Speaking of this heavenly udon, that's not the only thing we get. $5 cheese harumaki which is basically mozzie sticks but better, $8 calamari and literally anything our heart desires. I think I would solely go for a cold glass of some calpico. We ate and drank and laughed our hearts out, as we got ready for another week of schoolwork. See you next Sunday! :)</p>
+            </div>
+            <figure class="story-media">
+              <img src="../archive/IMG_1009.JPG" alt="Table full of food">
+            </figure>
+          </div>
+        </article>
 
-      <article class="story" id="udon">
-        <h2 class="headline">7$ udon in manhattan?</h2>
-        <p class="copy">Speaking of this heavenly udon, that's not the only thing we get. $5 cheese harumaki which is basically mozzie sticks but better, $8 calamari and literally anything our heart desires. I think I would solely go for a cold glass of some calpico. We ate and drank and laughed our hearts out, as we got ready for another week of schoolwork. See you next Sunday! :)</p>
-  
-      </article>
+      </section>
+    </main>
 
-    </section>
+    <aside class="playlist-column" aria-labelledby="playlist-label">
+      <section id="playlist">
+        <h3 class="section-label" id="playlist-label">Playlist #2</h3>
+        <ul class="tracks">
+          <li>Good Days – SZA</li>
+          <li>Lovers Rock – TV Girl</li>
+          <li>The Less I Know The Better – Tame Impala</li>
+          <li>Flatline – Justin Bieber</li>
+          <li>Make It To The Morning – PARTYNEXTDOOR</li>
+          <li>Juno – Sabrina Carpenter</li>
+          <li>Reminder – The Weeknd</li>
+        </ul>
+      </section>
+    </aside>
+  </div>
 
-    <hr>
-
-    <section id="playlist">
-      <h3 class="section-label">Playlist #2</h3>
-      <ul class="tracks">
-        <li>Good Days – SZA</li>
-        <li>Lovers Rock – TV Girl</li>
-        <li>The Less I Know The Better – Tame Impala</li>
-        <li>Flatline – Justin Bieber</li>
-        <li>Make It To The Morning – PARTYNEXTDOOR</li>
-        <li>Juno – Sabrina Carpenter</li>
-        <li>Reminder – The Weeknd</li>
-        <li>505 - The Arctic Monkeys</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p class="credit">©Weekends with Jui</p>
+  <footer class="page">
+    <p class="credit">© Weekend with Jui</p>
   </footer>
-
-</body>
-
 
 </body>
 </html>

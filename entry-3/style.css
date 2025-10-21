@@ -1,8 +1,6 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* style-entry3.css */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 html, body {
   background-color: #28443c;
@@ -24,13 +22,13 @@ html, body {
 
 .info {
   font-family: "Shizuru", system-ui;
-  font-size: 40px;
+  font-size: 45px;
   color: #ffc4b3;
 }
 
 .title {
   font-family: "Almendra SC", serif;
-  font-size: 101px;
+  font-size: 100px;
   text-transform: uppercase;
   text-align: center;
   color: #ffc4b3;
@@ -49,10 +47,7 @@ hr {
   margin-top: 32px;
 }
 
-.main-column {
-  flex: 3;
-}
-
+.main-column { flex: 3; }
 .playlist-column {
   flex: 1;
   padding-left: 24px;
@@ -62,43 +57,49 @@ hr {
 .stories {
   display: flex;
   flex-direction: column;
-  justify-content:left;
   gap: 48px;
 }
 
-.story {
-  background-color: #28443c;
-}
+.story { background-color: #28443c; }
 
+/* alternating rows */
 .story-flex {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 24px;
 }
+.story-flex.reverse { flex-direction: row-reverse; }
 
-.story-flex.reverse {
-  flex-direction: row-reverse;
-}
-
-.story-text {
-  flex: 1;
-}
+.story-text { flex: 1; }
 
 .story-media {
-  width: 50%;
-  min-width: 320px;
+  width: 45%;
+  min-width: 300px;
 }
-
 .story-media img {
-  display: flex;
-  flex-direction:column;
-  justify-content:space-evenly;
-  width: 80%;
-  height: 80%;
+  display: block;
+  width: 100%;
+  height: auto;
   border: none;
+  border-radius: 6px;
 }
 
+
+.badge-wrap { position: relative; }
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: "Shizuru", system-ui;
+  font-size: 14px;
+  padding: 4px 8px;
+  color: #28443c;
+  background-color: #ffc4b3;
+  border-radius: 4px;
+}
+
+/* type */
 .headline {
   margin: 8px 16px;
   font-family: "Shizuru", system-ui;
@@ -106,33 +107,28 @@ hr {
   text-transform: lowercase;
   color: #ffc4b3;
 }
-
 .copy {
   margin: 8px 16px 0 16px;
   font-size: 16px;
   color: #ffc4b3;
 }
 
+/* playlist */
 .section-label {
   margin-bottom: 12px;
   font-family: "Almendra SC", serif;
-  font-size: 50px;
+  font-size: 40px;
   text-transform: uppercase;
   color: #ffc4b3;
 }
-
 .tracks {
+  list-style-type: square;
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding-left: 16px;
-  list-style-type: square;
 }
-
-.tracks li {
-  font-size: 16px;
-  color: #ffc4b3;
-}
+.tracks li { font-size: 16px; color: #ffc4b3; }
 
 .credit {
   margin-top: 32px;
@@ -140,4 +136,3 @@ hr {
   color: #ffc4b3;
   text-align: center;
 }
-
