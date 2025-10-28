@@ -1,0 +1,159 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background-color: #28443c;
+  color: #ffc4b3;
+  font-family: "Montserrat", sans-serif;
+}
+
+.page {
+  width: 100%;
+  padding: 32px 48px;
+  background-color: #28443c;
+}
+
+.masthead-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info {
+  font-family: "Shizuru", system-ui;
+  font-size: 45px;
+  color: #ffc4b3;
+}
+
+.title {
+  font-family: "Almendra SC", serif;
+  font-size: 101px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffc4b3;
+}
+
+hr {
+  margin-top: 8px;
+  border: 1px solid #ffc4b3;
+}
+
+.content-layout {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.main-column { flex: 3; }
+
+.playlist-column {
+  flex: 1;
+  padding-left: 24px;
+  border-left: 2px solid #ffc4b3;
+}
+
+.stories {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.story { background-color: #28443c; }
+
+.story-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.story-flex.reverse { flex-direction: row-reverse; }
+
+.story-text {
+  flex: 1;
+  margin-top: -15px;
+}
+
+.story-media {
+  width: 60%;
+  min-width: 320px;
+}
+
+.story-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: none;
+  box-shadow: 0 6px 24px rgba(0,0,0,.22);
+  object-fit: cover;
+}
+
+.photo-row {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.photo-row img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border: none;
+  box-shadow: 0 6px 24px rgba(0,0,0,.22);
+}
+
+.headline {
+  margin: 8px 16px;
+  font-family: "Shizuru", system-ui;
+  font-size: 40px;
+  text-transform: lowercase;
+  color: #ffc4b3;
+  padding-bottom: 4px;
+  background:
+    linear-gradient(#ffc4b3 0 0) bottom left / 60px 2px no-repeat;
+}
+
+.copy {
+  margin: 8px 16px 0 16px;
+  font-size: 16px;
+  color: #ffc4b3;
+}
+
+.story-text .copy:first-of-type:first-letter {
+  font-family: "Almendra SC", serif;
+  float: left;
+  font-size: 3.2em;
+  line-height: .9;
+  padding-right: .12em;
+  padding-top: .08em;
+  color: #ffc4b3;
+}
+
+.section-label {
+  margin-bottom: 12px;
+  font-family: "Almendra SC", serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #ffc4b3;
+}
+
+.tracks {
+  list-style-type: square;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 16px;
+}
+
+.tracks li {
+  font-size: 16px;
+  color: #ffc4b3;
+}
+
+.credit {
+  margin-top: 32px;
+  font-size: 12px;
+  color: #ffc4b3;
+  text-align: center;
+}
+
