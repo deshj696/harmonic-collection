@@ -1,3 +1,143 @@
-body {
-  font-family: sans-serif;
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background-color: #28443c;
+  color: #ffc4b3;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+
+.page {
+  width: 100%;
+  padding: 32px 48px;
+  background-color: #28443c;
+}
+
+.masthead-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info {
+  font-family: "Shizuru", system-ui;
+  font-size: 22px;
+  color: #ffc4b3;
+}
+
+.title {
+  font-family: "Almendra SC", serif;
+  font-size: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffc4b3;
+}
+
+hr {
+  margin-top: 8px;
+  border: 1px solid #ffc4b3;
+}
+
+.intro {
+  margin-top: 16px;
+}
+
+.intro-line {
+  font-size: 16px;
+  color: #ffc4b3;
+}
+
+.home-layout {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.left-col {
+  flex: 3;
+}
+
+.right-col {
+  flex: 1;
+  border-left: 2px solid #ffc4b3;
+  padding-left: 24px;
+}
+
+.section-heading {
+  font-family: "Almendra SC", serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-sub {
+  font-family: "Almendra SC", serif;
+  font-size: 22px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  text-decoration: none;
+  color: #ffc4b3;
+  border: 1px solid #ffc4b3;
+  border-radius: 10px;
+  padding: 12px 14px;
+  width: calc(50% - 8px);
+}
+
+.card-date {
+  font-family: "Shizuru", system-ui;
+  font-size: 18px;
+}
+
+.card-title {
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.archive-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.archive-list a {
+  text-decoration: none;
+  color: #ffc4b3;
+  font-family: "Shizuru", system-ui;
+  font-size: 18px;
+}
+
+.about-text {
+  font-size: 14px;
+  color: #ffc4b3;
+}
+
+.credit {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 12px;
+  color: #ffc4b3;
+}
+
+
+@media (max-width: 860px) {
+  .home-layout { flex-direction: column; }
+  .right-col {
+    border-left: 0;
+    border-top: 2px solid #ffc4b3;
+    padding-left: 0;
+    padding-top: 16px;
+  }
+  .card { width: 100%; }
 }
