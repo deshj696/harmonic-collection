@@ -1,8 +1,12 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 html, body {
-  background-color: #28443c;
-  color: #ffc4b3;
+  background-color: #964B34; /* Chestnut */
+  color: #E9DF9E;            /* Vanilla */
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
 }
@@ -10,134 +14,178 @@ html, body {
 .page {
   width: 100%;
   padding: 32px 48px;
-  background-color: #28443c;
+  background-color: #964B34;
 }
 
-.masthead-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-.info {
-  font-family: "Shizuru", system-ui;
-  font-size: 22px;
-  color: #ffc4b3;
-}
 
-.title {
-  font-family: "Almendra SC", serif;
-  font-size: 100px;
-  text-transform: uppercase;
+.hero {
   text-align: center;
-  color: #ffc4b3;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
 
-hr {
-  margin-top: 8px;
-  border: 1px solid #ffc4b3;
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  margin-bottom: 0px;
 }
+
+.logo-img {
+  object-fit: contain;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-img.memory {
+  height: 200px;
+}
+
+
+.logo-img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.hero h1 {
+  line-height: 1;
+  font-size: 130px;
+  color: #E9DF9E;
+  font-family: "Almendra SC", serif;
+  margin-bottom: 10px;
+  letter-spacing: 4px;
+}
+
+.hero h2 {
+  line-height: 0.5;
+  font-size: 60px;
+  color: #E9DF9E;
+  font-family: "Shizuru", system-ui;
+  font-style: italic;
+}
+
+
+
+.coffee-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0 60px;
+  flex-wrap: wrap;
+}
+
+.coffee-row img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: block;
+}
+
+.coffee-row img:hover {
+  transform: scale(1.08);
+  opacity: 0.9;
+}
+
+
+
+.callout {
+  text-align: center;
+  font-family: "Shizuru", system-ui;
+  font-size: 42px;
+  color: #E9DF9E;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  max-width: 640px;
+  margin: 0 auto 48px;
+  line-height: 45px;
+}
+
 
 .intro {
-  margin-top: 16px;
+  max-width: 640px;
+  margin: 0 auto 48px;
+  text-align: center;
 }
 
-.intro-line {
-  font-size: 16px;
-  color: #ffc4b3;
+.intro p {
+  margin-bottom: 18px;
+  text-align: left;
 }
 
-.home-layout {
-  display: flex;
-  gap: 32px;
-  justify-content: space-between;
-  margin-top: 24px;
-}
 
-.left-col {
-  flex: 3;
-}
-
-.right-col {
-  flex: 1;
-  border-left: 2px solid #ffc4b3;
-  padding-left: 24px;
-}
-
-.section-heading {
-  font-family: "Almendra SC", serif;
-  font-size: 28px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-
-.section-sub {
-  font-family: "Almendra SC", serif;
-  font-size: 22px;
-  margin-top: 24px;
-  margin-bottom: 8px;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.card {
-  text-decoration: none;
-  color: #ffc4b3;
-  border: 1px solid #ffc4b3;
-  border-radius: 10px;
-  padding: 12px 14px;
-  width: calc(50% - 8px);
-}
-
-.card-date {
-  font-family: "Shizuru", system-ui;
-  font-size: 18px;
-}
-
-.card-title {
-  font-size: 16px;
-  margin-top: 4px;
-}
-
-.archive-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: 4px;
-}
-
-.archive-list a {
-  text-decoration: none;
-  color: #ffc4b3;
-  font-family: "Shizuru", system-ui;
-  font-size: 18px;
-}
-
-.about-text {
-  font-size: 14px;
-  color: #ffc4b3;
-}
 
 .credit {
   text-align: center;
   margin-top: 32px;
   font-size: 12px;
-  color: #ffc4b3;
+  color: #E9DF9E;
 }
 
 
+
 @media (max-width: 860px) {
-  .home-layout { flex-direction: column; }
-  .right-col {
-    border-left: 0;
-    border-top: 2px solid #ffc4b3;
-    padding-left: 0;
-    padding-top: 16px;
+  .page {
+    padding: 24px;
   }
-  .card { width: 100%; }
+
+  .hero h1 {
+    font-size: 90px;
+  }
+
+  .hero h2 {
+    font-size: 42px;
+  }
+
+  .logo-img.memory {
+    height: 90px;
+  }
+
+  .logo-img.camera {
+    height: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 20px 16px;
+  }
+
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+
+  .hero h1 {
+    font-size: 58px;
+    letter-spacing: 2px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .logo-img.memory {
+    height: 70px;
+  }
+
+  .logo-img.camera {
+    height: 55px;
+  }
+
+  .intro {
+    margin-bottom: 32px;
+  }
+
+  .intro p {
+    font-size: 14px;
+  }
+
+  .coffee-row img {
+    width: 80px;
+    height: 80px;
+  }
 }

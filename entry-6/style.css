@@ -150,7 +150,7 @@ hr {
 }
 
 .vinyl-small:hover {
-  transform: rotate(-10deg) scale(1.05);
+  transform: rotate(-360deg) scale(1.50);
 }
 
 .playlist-text {
