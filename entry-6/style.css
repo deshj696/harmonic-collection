@@ -41,6 +41,7 @@ body {
   text-transform: uppercase;
   color: var(--text);
   text-align: center;
+  letter-spacing: 3px;
 }
 
 hr {
