@@ -5,8 +5,8 @@
 }
 
 html, body {
-  background-color: #964B34; /* Chestnut */
-  color: #E9DF9E;            /* Vanilla */
+  background-color: #964B34; 
+  color: #E9DF9E;            
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
 }
@@ -16,7 +16,6 @@ html, body {
   padding: 32px 48px;
   background-color: #964B34;
 }
-
 
 
 .hero {
@@ -29,8 +28,6 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0px;
-  margin-bottom: 0px;
 }
 
 .logo-img {
@@ -41,7 +38,6 @@ html, body {
 .logo-img.memory {
   height: 200px;
 }
-
 
 .logo-img:hover {
   transform: scale(1.05);
@@ -91,20 +87,6 @@ html, body {
 }
 
 
-
-.callout {
-  text-align: center;
-  font-family: "Shizuru", system-ui;
-  font-size: 42px;
-  color: #E9DF9E;
-  margin-bottom: 40px;
-  letter-spacing: 2px;
-  max-width: 640px;
-  margin: 0 auto 48px;
-  line-height: 45px;
-}
-
-
 .intro {
   max-width: 640px;
   margin: 0 auto 48px;
@@ -118,6 +100,80 @@ html, body {
 
 
 
+.callout {
+  text-align: center;
+  font-family: "Shizuru", system-ui;
+  font-size: 42px;
+  color: #E9DF9E;
+  letter-spacing: 2px;
+  max-width: 640px;
+  margin: 0 auto 48px;
+  line-height: 45px;
+}
+
+.calendar {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.calendar-title {
+  font-family: "Almendra SC", serif;
+  font-size: 50px;
+  color: #E9DF9E;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+
+.day-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 210px;    
+
+.day-label {
+  font-family: "Shizuru", system-ui;
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;   
+  color: #E9DF9E;
+}
+
+
+.day-image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  transition: transform 0.25s ease ,opacity 0.3s ease;
+}
+
+.day-image:hover {
+  transform: translateY(-6px) ;
+  transform: scale(1.08);
+  opacity: 0.9;
+}
+
+
+
+.day-card.empty {
+  opacity: 0.4;
+}
+
+.day-card.empty .day-label {
+  font-style: italic;
+}
+
+
+
 .credit {
   text-align: center;
   margin-top: 32px;
@@ -125,7 +181,7 @@ html, body {
   color: #E9DF9E;
 }
 
-
+/* responsive */
 
 @media (max-width: 860px) {
   .page {
@@ -143,9 +199,24 @@ html, body {
   .logo-img.memory {
     height: 90px;
   }
+}
 
-  .logo-img.camera {
-    height: 70px;
+@media (max-width: 700px) {
+  .calendar-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .calendar-title {
+    font-size: 38px;
+  }
+
+  .day-label {
+    font-size: 20px;
+  }
+
+  .day-image {
+    width: 120px;
+    height: 120px;
   }
 }
 
@@ -172,10 +243,6 @@ html, body {
     height: 70px;
   }
 
-  .logo-img.camera {
-    height: 55px;
-  }
-
   .intro {
     margin-bottom: 32px;
   }
@@ -188,4 +255,9 @@ html, body {
     width: 80px;
     height: 80px;
   }
+
+  .calendar-grid {
+    grid-template-columns: 1fr;
+  }
 }
+
