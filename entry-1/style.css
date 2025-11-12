@@ -161,6 +161,40 @@ hr {
   font-size: 16px;
   color: #E9DF9E;
 }
+/* Playlist header and divider */
+.playlist-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.playlist-divider {
+  border: none;
+  height: 2px;
+  width: 100%; /* full width line */
+  background-color: #E9DF9E;
+  margin: 8px 0 16px;
+}
+
+/* Vinyl record styling */
+.vinyl-wrapper {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vinyl {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  transition: transform 1s ease-in-out;
+}
+
+.vinyl:hover {
+  transform: rotate(360deg);
+}
+
 
 
 

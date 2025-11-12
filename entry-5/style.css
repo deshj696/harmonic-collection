@@ -1,65 +1,92 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+
+:root {
+  --brown: #79443B;   /* Bole */
+  --vanilla: #CCC0AC; /* Dun */
+}
+
 html, body {
-  background-color: #28443c;
-  color: #ffc4b3;
+  background-color: var(--brown);
+  color: var(--vanilla);
   font-family: "Montserrat", sans-serif;
 }
 
 .page {
   width: 100%;
   padding: 32px 48px;
-  background-color: #28443c;
+  background-color: var(--brown);
 }
+
+
 
 .masthead-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .info {
   font-family: "Shizuru", system-ui;
-  font-size: 45px;
-  color: #ffc4b3;
+  font-size: 25px;
+  color: #E9DF9E;
 }
 
 .title {
   font-family: "Almendra SC", serif;
-  font-size: 101px;
+  font-size: 96px;
   text-transform: uppercase;
   text-align: center;
-  color: #ffc4b3;
+  color: #E9DF9E;
+  letter-spacing: 3px;
 }
+
+.home-link {
+  display: inline-block;
+}
+
+.camera-icon {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.home-link:hover .camera-icon {
+  transform: scale(1.05) rotate(-3deg);
+  opacity: 0.9;
+}
+
 
 hr {
   margin-top: 8px;
-  border: 1px solid #ffc4b3;
+  border: 1px solid var(--vanilla);
 }
+
+/* LAYOUT ----------------------------------------------------- */
 
 .content-layout {
   display: flex;
-  gap: 25px;
+  gap: 32px;
   justify-content: space-between;
   margin-top: 32px;
 }
 
 .main-column { flex: 3; }
-
-.playlist-column {
+.playlist-column { 
   flex: 1;
   padding-left: 24px;
-  border-left: 2px solid #ffc4b3;
+  border-left: 2px solid var(--vanilla);
 }
+
+/* STORIES ---------------------------------------------------- */
 
 .stories {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 48px;
 }
-
-.story { background-color: #28443c; }
 
 .story-flex {
   display: flex;
@@ -71,89 +98,92 @@ hr {
 
 .story-text {
   flex: 1;
-  margin-top: -15px;
-}
-
-.story-media {
-  width: 60%;
-  min-width: 320px;
-}
-
-.story-media img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: none;
-  box-shadow: 0 6px 24px rgba(0,0,0,.22);
-  object-fit: cover;
-}
-
-.photo-row {
-  display: flex;
-  gap: 12px;
-  justify-content: space-between;
-}
-
-.photo-row img {
-  width: 50%;
-  height: auto;
-  object-fit: cover;
-  border: none;
-  box-shadow: 0 6px 24px rgba(0,0,0,.22);
 }
 
 .headline {
   margin: 8px 16px;
   font-family: "Shizuru", system-ui;
-  font-size: 40px;
+  font-size: 38px;
   text-transform: lowercase;
-  color: #ffc4b3;
+  color: var(--vanilla);
   padding-bottom: 4px;
-  background:
-    linear-gradient(#ffc4b3 0 0) bottom left / 60px 2px no-repeat;
+  background: linear-gradient(var(--vanilla) 0 0) bottom left / 60px 2px no-repeat;
 }
 
 .copy {
   margin: 8px 16px 0 16px;
   font-size: 16px;
-  color: #ffc4b3;
+  color: var(--vanilla);
+  line-height: 1.55;
 }
 
+/* DROP CAP */
 .story-text .copy:first-of-type:first-letter {
   font-family: "Almendra SC", serif;
   float: left;
   font-size: 3.2em;
   line-height: .9;
   padding-right: .12em;
-  padding-top: .08em;
-  color: #ffc4b3;
+  padding-top: .1em;
+  color: var(--vanilla);
 }
+
+/* IMAGES ----------------------------------------------------- */
+
+.story-media {
+  width: 60%;
+  min-width: 320px;
+}
+
+.photo-row {
+  display: flex;
+  gap: 12px;
+}
+
+.photo-row img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.35);
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+/* Hover vibe */
+.photo-row img:hover {
+  transform: scale(1.05);
+  opacity: 0.92;
+}
+
+/* PLAYLIST ---------------------------------------------------- */
 
 .section-label {
   margin-bottom: 12px;
   font-family: "Almendra SC", serif;
   font-size: 28px;
   text-transform: uppercase;
-  color: #ffc4b3;
+  color: var(--vanilla);
 }
 
 .tracks {
   list-style-type: square;
+  padding-left: 16px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding-left: 16px;
+  gap: 8px;
 }
 
 .tracks li {
   font-size: 16px;
-  color: #ffc4b3;
+  color: var(--vanilla);
 }
+
+/* FOOTER ------------------------------------------------------ */
 
 .credit {
   margin-top: 32px;
-  font-size: 12px;
-  color: #ffc4b3;
   text-align: center;
+  font-size: 12px;
+  color: var(--vanilla);
 }
 
