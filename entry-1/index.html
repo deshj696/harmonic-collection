@@ -1,59 +1,78 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-  <title>The Sunday Chronicles</title>
+<head>
+  <meta charset="UTF-8" />
+  <title>The Sunday Chronicles — Entry 1</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&family=Shizuru&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type ="image/png" href="../archive/favicon.png">
-
-  </head>
+</head>
 <body>
+
 
   <header id="masthead" class="page">
     <div class="masthead-top">
-      <p class="info date">09/28</p>
+      <div class="masthead-left">
+        <p class="info date">09/28</p>
+        <p class="info weather">67°F</p>
+      </div>
+
       <h1 class="title">THE SUNDAY CHRONICLES</h1>
-      <p class="info weather">67°F</p>
+
+      <a href="../index.html" class="home-link" aria-label="Back to homepage">
+        <img src="../archive/homepage/camera png.png" alt="Camera icon" class="camera-icon">
+      </a>
     </div>
     <hr />
   </header>
 
+ 
   <div class="page remix-layout">
+
     <main class="stories-column">
-      <article class="story-split left" id="steam">
+      
+      <article class="story-row" id="steam">
+        <div class="panel text">
+          <h2 class="headline">she’s a regular at <span class="accent">Steam</span></h2>
+          <p class="copy">
+            It was in late March of freshman year that me and my friends found Steam, this little Chinese place tucked away between a laundromat and a wine store, just outside the Lang building. We haven’t stopped going there since. I love bringing people there and having them exclaim at the prices, comparing the taste to Din Tai Fung. They give you free Jasmine tea and fortune cookies that all have the same chit of paper. Something about that place pulls me in every time.
+          </p>
+        </div>
         <figure class="panel media">
           <img src="../archive/IMG_1612.JPG" alt="Steam restaurant photo" />
         </figure>
-        <div class="panel text">
-          <h2 class="headline">she’s a regular at <span class="accent">Steam</span></h2>
-          <p class="copy">It was in late March of freshman year that me and my friends found Steam, this little Chinese place tucked away between a laundromat and a wine store, just outside the Lang building. We haven’t stopped going there since. I love bringing people there and having them exclaim at the prices, comparing the taste to Din Tai Fung. They give you free Jasmine tea and fortune cookies that all have the same chit of paper. Something about that place pulls me in every time.</p>
-        </div>
       </article>
 
-      <article class="story-split right" id="met">
-        <figure class="panel media">
-          <img src="../archive/IMG_0439.jpg" alt="MET museum gallery or detail" />
-        </figure>
+     
+      <article class="story-row" id="met">
         <div class="panel text">
           <h2 class="headline">metropolitan museum of art</h2>
-          <p class="copy">The best part of living in New York City is that I’m just a subway ride away from the MET. I love going there alone, putting on my playlist and wandering among the halls decked with beautiful art. It never gets old and I always end up finding something I’ve never seen before, like this sparkly crystal deer.</p>
+          <p class="copy">
+            The best part of living in New York City is that I’m just a subway ride away from the MET. I love going there alone, putting on my playlist and wandering among the halls decked with beautiful art. It never gets old and I always end up finding something I’ve never seen before, like this sparkly crystal deer.
+          </p>
         </div>
+        <figure class="panel media">
+          <img src="../archive/IMG_0439.jpg" alt="MET museum gallery detail" />
+        </figure>
       </article>
 
-      <article class="story-split left" id="doggo">
+     
+      <article class="story-row" id="doggo">
+        <div class="panel text">
+          <h2 class="headline">met the cutest doggo</h2>
+          <p class="copy">
+            She was the cutest golden retriever, waddling her feet towards mine at the MET steps. The owner was the sweetest and he let me pet her. She tried to lick my hands, maybe because they were salty from the pretzel I was eating but I wasn’t complaining.
+          </p>
+        </div>
         <figure class="panel media">
           <img src="../archive/IMG_0260.jpg" alt="Golden retriever at the MET steps" />
         </figure>
-        <div class="panel text">
-          <h2 class="headline">met the cutest doggo</h2>
-          <p class="copy">She was the cutest golden retriever, waddling her feet towards mine at the MET steps. The owner was the sweetest and he let me pet her. She tried to lick my hands, maybe because they were salty from the pretzel I was eating but I wasn’t complaining.</p>
-        </div>
       </article>
     </main>
 
+ 
     <aside class="playlist-column" aria-labelledby="playlist-label">
       <section id="playlist">
         <h3 class="section-label" id="playlist-label">Playlist #1</h3>
@@ -74,7 +93,6 @@
   <footer class="page">
     <p class="credit">© Weekends with Jui</p>
   </footer>
-
 
 </body>
 </html>
