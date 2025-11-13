@@ -6,7 +6,7 @@
 
 html,
 body {
-  background-color: #704126;   
+  background-color: #762020;   
   color: #EECE7B;              
   font-family: "Montserrat", sans-serif;
 }
@@ -14,7 +14,7 @@ body {
 .page {
   width: 100%;
   padding: 32px 48px;
-  background-color: #704126;   
+  background-color: #762020;   
 }
 
 
@@ -194,37 +194,6 @@ hr {
 }
 
 
-
-.playlist-bottom {
-  margin-top: 56px;
-  border-top: 2px solid #EECE7B;
-  padding-top: 24px;
-}
-
-.section-label {
-  margin-bottom: 12px;
-  font-family: "Almendra SC", serif;
-  font-size: 28px;
-  text-transform: uppercase;
-  color: #EECE7B;
-}
-
-.tracks {
-  list-style-type: square;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-left: 16px;
-}
-
-.tracks li {
-  font-size: 16px;
-  color: #EECE7B;
-}
-
-
-/* footer */
-
 .credit {
   margin-top: 32px;
   font-size: 12px;
@@ -233,7 +202,6 @@ hr {
 }
 
 
-/* responsive */
 
 @media (max-width: 960px) {
   .title {
