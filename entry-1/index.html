@@ -1,101 +1,122 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>The Sunday Chronicles — Entry 1</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&family=Shizuru&display=swap" rel="stylesheet">
+  <title>The Sunday Chronicles — Entry One</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&family=Shizuru&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type ="image/png" href="../archive/favicon.png">
 </head>
 <body>
-
-
+<br>
   <header id="masthead" class="page">
     <div class="masthead-top">
-      <div class="masthead-left">
-        <p class="info date">09/28</p>
+      <div class="mast-left">
+        <p class="info date">09/29</p>
         <p class="info weather">67°F</p>
       </div>
 
       <h1 class="title">THE SUNDAY CHRONICLES</h1>
 
-      <a href="../index.html" class="home-link" aria-label="Back to homepage">
-        <img src="../archive/homepage/camera png.png" alt="Camera icon" class="camera-icon">
-      </a>
+      <div class="home-wrapper">
+  <p class="home-label">Home</p>
+  <a href="../index.html" class="home-link">
+    <img src="../archive/homepage/camera png.png" alt="Back to homepage" class="camera-icon" />
+  </a>
+</div>
     </div>
     <hr />
   </header>
 
- 
-  <div class="page remix-layout">
+  <div class="page">
+    <main class="entries">
 
-    <main class="stories-column">
-      
-      <article class="story-row" id="steam">
-        <div class="panel text">
-          <h2 class="headline">she’s a regular at <span class="accent">Steam</span></h2>
-          <p class="copy">
-            It was in late March of freshman year that me and my friends found Steam, this little Chinese place tucked away between a laundromat and a wine store, just outside the Lang building. We haven’t stopped going there since. I love bringing people there and having them exclaim at the prices, comparing the taste to Din Tai Fung. They give you free Jasmine tea and fortune cookies that all have the same chit of paper. Something about that place pulls me in every time.
-          </p>
-        </div>
-        <figure class="panel media">
+      <!-- STORY 1: STEAM -->
+      <article class="entry" id="steam">
+        <figure class="entry-media">
           <img src="../archive/IMG_1612.JPG" alt="Steam restaurant photo" />
         </figure>
+
+        <div class="entry-text">
+          <h2 class="headline">she’s a regular at <span class="accent">Steam</span></h2>
+          <p class="copy">
+            It was in late March of freshman year that me and my friends found Steam, this little Chinese place tucked away between a laundromat and a wine store, just outside the Lang building. I love bringing people there and having them exclaim at the prices, comparing the taste to Din Tai Fung. They give you free Jasmine tea and fortune cookies that all have the same chit of paper. Something about that place pulls me in every time.
+          </p>
+        </div>
+
+        <div class="entry-choices">
+          <p class="pick-label">select your order!</p>
+          <div class="story-icons">
+            <img src="../archive/wonton.png" alt="Wonton soup" class="icon-img" />
+            <img src="../archive/fried rice.png" alt="Fried rice" class="icon-img" />
+            <img src="../archive/cucumber.png" alt="Cucumber side dish" class="icon-img" />
+          </div>
+        </div>
       </article>
 
-     
-      <article class="story-row" id="met">
-        <div class="panel text">
+      <!-- STORY 2: MET -->
+      <article class="entry" id="met">
+        <figure class="entry-media">
+          <img src="../archive/IMG_0439.jpg" alt="MET museum gallery" />
+        </figure>
+
+        <div class="entry-text">
           <h2 class="headline">metropolitan museum of art</h2>
           <p class="copy">
             The best part of living in New York City is that I’m just a subway ride away from the MET. I love going there alone, putting on my playlist and wandering among the halls decked with beautiful art. It never gets old and I always end up finding something I’ve never seen before, like this sparkly crystal deer.
           </p>
         </div>
-        <figure class="panel media">
-          <img src="../archive/IMG_0439.jpg" alt="MET museum gallery detail" />
-        </figure>
+
+        <div class="entry-choices">
+          <p class="pick-label">what section to visit?</p>
+          <div class="story-icons">
+            <img src="../archive/china.png" alt="Blue and white vase" class="icon-img" />
+            <img src="../archive/statue.png" alt="Classical sculpture head" class="icon-img" />
+            <img src="../archive/monet.png" alt="Monet painting" class="icon-img" />
+          </div>
+        </div>
       </article>
 
-     
-      <article class="story-row" id="doggo">
-        <div class="panel text">
+      <!-- STORY 3: DOGGO -->
+      <article class="entry" id="doggo">
+        <figure class="entry-media">
+          <img src="../archive/IMG_0260.jpg" alt="Golden retriever at the MET steps" />
+        </figure>
+
+        <div class="entry-text">
           <h2 class="headline">met the cutest doggo</h2>
           <p class="copy">
             She was the cutest golden retriever, waddling her feet towards mine at the MET steps. The owner was the sweetest and he let me pet her. She tried to lick my hands, maybe because they were salty from the pretzel I was eating but I wasn’t complaining.
           </p>
         </div>
-        <figure class="panel media">
-          <img src="../archive/IMG_0260.jpg" alt="Golden retriever at the MET steps" />
-        </figure>
+
+        <div class="entry-choices">
+          <p class="pick-label">possessions of the doggo</p>
+          <div class="story-icons">
+            <img src="../archive/paw.png" alt="Dog paw" class="icon-img" />
+            <img src="../archive/dogtoy.png" alt="Dogritos toy" class="icon-img" />
+            <img src="../archive/pretzel.png" alt="Pretzel" class="icon-img" />
+          </div>
+        </div>
       </article>
+
     </main>
 
- 
-    <aside class="playlist-column" aria-labelledby="playlist-label">
-  <section id="playlist">
-    <div class="playlist-header">
+    <section id="playlist" class="playlist-bottom" aria-labelledby="playlist-label">
       <h3 class="section-label" id="playlist-label">Playlist #1</h3>
-      <hr class="playlist-divider">
-    </div>
-
-    <ul class="tracks">
-      <li>Is there free breakfast here? – Hotel Ugly</li>
-      <li>Static – Steve Lacy</li>
-      <li>Bad Dream – Wallows</li>
-      <li>Congratulations – Mac Miller</li>
-      <li>Love me Not – Ravyn Lenae</li>
-      <li>Stevie Doesn’t Wonder – Hotel Ugly</li>
-      <li>Forever &amp; More – ROLE MODEL</li>
-      <li>3 Nights – Dominic Fike</li>
-    </ul>
-
-    <div class="vinyl-wrapper">
-      <img src="../archive/vinyl-record-timeless-classic-music_632498-24357.png" alt="Vinyl record" class="vinyl">
-    </div>
-  </section>
-</aside>
+      <ul class="tracks">
+        <li>Is there free breakfast here? – Hotel Ugly</li>
+        <li>Static – Steve Lacy</li>
+        <li>Bad Dream – Wallows</li>
+        <li>Congratulations – Mac Miller</li>
+        <li>Love me Not – Ravyn Lenae</li>
+        <li>Stevie Doesn’t Wonder – Hotel Ugly</li>
+        <li>Forever &amp; More – ROLE MODEL</li>
+        <li>3 Nights – Dominic Fike</li>
+      </ul>
+    </section>
   </div>
 
   <footer class="page">
