@@ -5,139 +5,172 @@
 }
 
 html, body {
-  background-color: #28443c;
-  color: #ffc4b3;
+  background-color: #752416;
+  color: #ffe8b3;
   font-family: "Montserrat", sans-serif;
 }
 
-.page {
-  width: 100%;
-  padding: 32px 48px;
-  background-color: #28443c;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.masthead-top {
+.video-hero {
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  background-color: #000;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  object-fit: contain;   
+  display: block;
+  opacity: 0.8;          
+}
+
+.text-overlay {
+  position: absolute;
+  inset: 0;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  background: transparent;
+  pointer-events: none;  
+}
+
+.overlay-top-row {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 12px auto;
+  display: flex;
   justify-content: space-between;
 }
 
 .info {
   font-family: "Shizuru", system-ui;
-  font-size: 40px;
-  color: #ffc4b3;
+  font-size: 32px;
 }
 
-.title {
-  font-family: "Almendra SC", serif;
-  font-size: 101px;
+.hero-title {
+  font-family: "Almendra SC", system-ui;
+  font-size: 100px;
   text-transform: uppercase;
-  text-align: center;
-  color: #ffc4b3;
+  letter-spacing: 10px;
 }
 
-hr {
+.hero-subtitle {
   margin-top: 8px;
-  border: 1px solid #ffc4b3;
+  font-family: "Shizuru", system-ui;
+  font-size: clamp(22px, 3vw, 32px);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
-.content-layout {
+.page-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 80px 24px;
+}
+
+.paragraph-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 48px;
-  margin-top: 32px;
+  gap: 25px;
+  margin-bottom: 40px;
+  justify-content: center;
 }
 
-.main-column {
-  flex: 3;
+.left-paragraph,
+.right-paragraph {
+  width: 30%;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
-.playlist-column {
-  flex: 1;
-  padding-left: 24px;
-  border-left: 2px solid #ffc4b3;
+.story-block {
+  margin-bottom: 24px;
 }
 
-.stories {
-  display: flex;
-  flex-direction: column;
-  justify-content:left;
-  gap: 48px;
-}
-
-.story {
-  background-color: #28443c;
-}
-
-.story-flex {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 24px;
-}
-
-.story-flex.reverse {
-  flex-direction: row-reverse;
+.story-headline {
+  font-family: "Shizuru", system-ui;
+  font-size: 24px;
+  text-transform: lowercase;
+  margin-bottom: 8px;
 }
 
 .story-text {
-  flex: 1;
-}
-
-.story-media {
-  width: 50%;
-  min-width: 320px;
-}
-
-.story-media img {
-  display: flex;
-  flex-direction:column;
-  justify-content:space-evenly;
-  width: 80%;
-  height: 80%;
-  border: none;
-}
-
-.headline {
-  margin: 8px 16px;
-  font-family: "Shizuru", system-ui;
-  font-size: 40px;
-  text-transform: lowercase;
-  color: #ffc4b3;
-}
-
-.copy {
-  margin: 8px 16px 0 16px;
   font-size: 16px;
-  color: #ffc4b3;
 }
 
-.section-label {
-  margin-bottom: 12px;
-  font-family: "Almendra SC", serif;
-  font-size: 50px;
-  text-transform: uppercase;
-  color: #ffc4b3;
+.home-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  pointer-events: auto;
+  text-decoration: none;
 }
 
-.tracks {
+.home-button img {
+  width: 100px;
+  opacity: 0.9;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.home-button:hover img {
+  transform: rotate(-8deg) scale(1.08);
+  opacity: 1;
+}
+
+
+.three-images {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-left: 16px;
-  list-style-type: square;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 50px auto 60px auto;
+  width: 90%;
 }
 
-.tracks li {
-  font-size: 16px;
-  color: #ffc4b3;
+.img-box {
+   width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
 }
 
+.img-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.img-box:hover img {
+   transform: translateY(-6px) rotate(-10deg) scale(1.02);
+}
+
+
+@media (max-width: 700px) {
+  .three-images {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .img-box {
+    width: 80%;
+  }
+}
 .credit {
   margin-top: 32px;
   font-size: 12px;
-  color: #ffc4b3;
+  color:#ffe8b3;
   text-align: center;
 }
-
