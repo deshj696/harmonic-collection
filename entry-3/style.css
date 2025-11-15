@@ -1,15 +1,19 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 html, body {
-  background-color: #28443c;
-  color: #ffc4b3;
+  background-color: #FFFAF0;   /* Floral White */
+  color: #CC7722;              /* Ochre */
   font-family: "Montserrat", sans-serif;
 }
 
 .page {
   width: 100%;
   padding: 32px 48px;
-  background-color: #28443c;
+  background-color: #FFFAF0;   /* Floral White */
 }
 
 .masthead-top {
@@ -21,7 +25,7 @@ html, body {
 .info {
   font-family: "Shizuru", system-ui;
   font-size: 45px;
-  color: #ffc4b3;
+  color: #CC7722;              /* Ochre */
 }
 
 .title {
@@ -29,12 +33,12 @@ html, body {
   font-size: 100px;
   text-transform: uppercase;
   text-align: center;
-  color: #ffc4b3;
+  color: #CC7722;              /* Ochre */
 }
 
 hr {
   margin-top: 8px;
-  border: 1px solid #ffc4b3;
+  border: 1px solid #CC7722;   /* Ochre */
 }
 
 .content-layout {
@@ -46,10 +50,11 @@ hr {
 }
 
 .main-column { flex: 3; }
+
 .playlist-column {
   flex: 1;
   padding-left: 24px;
-  border-left: 2px solid #ffc4b3;
+  border-left: 2px solid #CC7722;  /* Ochre */
 }
 
 .stories {
@@ -58,7 +63,9 @@ hr {
   gap: 48px;
 }
 
-.story { background-color: #28443c; }
+.story {
+  background-color: #FFFAF0;   /* Floral White */
+}
 
 .story-flex {
   display: flex;
@@ -66,14 +73,21 @@ hr {
   align-items: flex-start;
   gap: 24px;
 }
-.story-flex.reverse { flex-direction: row-reverse; }
 
-.story-text { flex: 1; }
+.story-flex.reverse {
+  flex-direction: row-reverse;
+}
+
+.story-text {
+  flex: 1;
+  color: #CC7722;              /* Ochre */
+}
 
 .story-media {
   width: 45%;
   min-width: 300px;
 }
+
 .story-media img {
   display: block;
   width: 100%;
@@ -82,8 +96,10 @@ hr {
   border-radius: 6px;
 }
 
+.badge-wrap {
+  position: relative;
+}
 
-.badge-wrap { position: relative; }
 .badge {
   position: absolute;
   top: 10px;
@@ -91,8 +107,8 @@ hr {
   font-family: "Shizuru", system-ui;
   font-size: 14px;
   padding: 4px 8px;
-  color: #28443c;
-  background-color: #ffc4b3;
+  color: #FFFAF0;             /* Floral White text */
+  background-color: #CC7722;  /* Ochre badge */
   border-radius: 4px;
 }
 
@@ -101,12 +117,13 @@ hr {
   font-family: "Shizuru", system-ui;
   font-size: 40px;
   text-transform: lowercase;
-  color: #ffc4b3;
+  color: #CC7722;             /* Ochre */
 }
+
 .copy {
   margin: 8px 16px 0 16px;
   font-size: 16px;
-  color: #ffc4b3;
+  color: #CC7722;             /* Ochre */
 }
 
 .section-label {
@@ -114,8 +131,9 @@ hr {
   font-family: "Almendra SC", serif;
   font-size: 40px;
   text-transform: uppercase;
-  color: #ffc4b3;
+  color: #CC7722;             /* Ochre */
 }
+
 .tracks {
   list-style-type: square;
   display: flex;
@@ -123,11 +141,15 @@ hr {
   gap: 10px;
   padding-left: 16px;
 }
-.tracks li { font-size: 16px; color: #ffc4b3; }
+
+.tracks li {
+  font-size: 16px;
+  color: #CC7722;             /* Ochre */
+}
 
 .credit {
   margin-top: 32px;
   font-size: 12px;
-  color: #ffc4b3;
+  color: #CC7722;             /* Ochre */
   text-align: center;
 }

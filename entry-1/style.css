@@ -61,13 +61,6 @@ body {
   align-items: center;
 }
 
-.home-label {
-  font-family: "Shizuru", system-ui;
-  font-size: 30px;
-  color: #EECE7B;
-  margin-bottom: 4px;
-  letter-spacing: 1px;
-}
 
 .camera-icon {
   height: 60px;
