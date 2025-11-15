@@ -1,100 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Title - Entry 3</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
- <head>
   <meta charset="UTF-8" />
   <title>The Sunday Chronicles — Entry Three</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&family=Shizuru&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style-entry3.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header id="masthead" class="page">
     <div class="masthead-top">
-      <p class="info date">10/12</p>
+      <div class="mast-left">
+        <p class="info date">10/12</p>
+        <p class="info weather">57°F</p>
+      </div>
+
       <h1 class="title">THE SUNDAY CHRONICLES</h1>
-      <p class="info weather">57°F</p>
+
+      <div class="home-wrapper">
+        <a href="../index.html" class="home-link">
+          <img src="../archive/homepage/camera png.png" alt="Back to homepage" class="camera-icon" />
+        </a>
+      </div>
     </div>
     <hr />
   </header>
 
-  <div class="page content-layout">
-    <main class="main-column">
-      <section class="stories">
-        <article class="story">
-          <div class="story-flex">
-            <div class="story-text">
-              <h2 class="headline">rainy weather means ,,,</h2>
-              <p class="copy">as october rolls around, a constant petrichor whiffs in the air and my stomach craves spicy soup. i feel like it’s a science? sichuan spiced broth, infinite noodles, fresh bokchoy, meat and tofu - there’s no way you’re not craving it as you read! well if you want, head over to YGF Malatang on 3rd Ave and thank me later. I started off a gloomy Sunday almost staining my favorite sweater, but it was worth it.</p>
-            </div>
-            <figure class="story-media badge-wrap">
-              <img src="../archive/malatang.jpg" alt="Spicy soup on a rainy day" />
-              <figcaption class="badge">rain day</figcaption>
-            </figure>
-          </div>
-        </article>
+  <div class="page">
+    <main class="entries">
 
-        <article class="story">
-          <div class="story-flex reverse">
-            <figure class="story-media tall badge-wrap">
-              <img src="../archive/waterfall display.jpg" alt="Shimmering water display on 5th Ave" />
-              <figcaption class="badge">5th ave</figcaption>
-            </figure>
-            <div class="story-text">
-              <h2 class="headline">5th ave is so surreal!</h2>
-              <p class="copy">Sunday + rain = me shopping for a puffer for the season. There I was, a long way from home (I’m being dramatic, it was like 25 blocks), surrounded with more things to buy than my pockets could afford. Naturally, I was lost, trying to find my way to UNIQLO, when I came across this water display. When I photographed it, it looked like a pool of gold, glistening down all sparkly. I love sparkles.</p>
-            </div>
-          </div>
-        </article>
+      <!-- STORY 1: MALATANG -->
+      <article class="entry" id="malatang">
+        <figure class="entry-media">
+          <img src="../archive/malatang.jpg" alt="Spicy soup on a rainy day" />
+        </figure>
 
-        <article class="story">
-          <div class="story-flex">
-            <div class="story-text">
-              <h2 class="headline">an iced latte a day, keeps me awake</h2>
-              <p class="copy">Rain on the sidewalk, umbrella dripping, and I still order it iced. Cold glass, clink of cubes, oat milk turning the espresso a soft caramel. I take the first sip and my brain finally switches on. The window fogs a little, people float by in shiny coats, and I start scribbling notes I did not know I had in me. If you want to make it extra good, add a tiny pinch of cardamom and cinnamon. The corner café on 3rd Ave feels like a study nook today, just the right kind of hum. I leave with chilly hands and a warm mind. Perfect trade.</p>
-            </div>
-            <figure class="story-media wide badge-wrap">
-              <img src="../archive/coffee.jpg" alt="Iced latte by a rainy window" />
-              <figcaption class="badge">latte</figcaption>
-            </figure>
-          </div>
-        </article>
+        <div class="entry-text">
+          <h2 class="headline">rainy weather means ,,,</h2>
+          <p class="copy">
+            as october rolls around, a constant petrichor whiffs in the air and my stomach craves spicy soup. i feel like it’s a science? sichuan spiced broth, infinite noodles, fresh bokchoy, meat and tofu - there’s no way you’re not craving it as you read! well if you want, head over to YGF Malatang on 3rd Ave and thank me later. I started off a gloomy Sunday almost staining my favorite sweater, but it was worth it.
+          </p>
+        </div>
 
-      </section>
+        <div class="entry-choices">
+          <p class="pick-label">what goes in your bowl?</p>
+          <div class="story-icons">
+            <img src="../archive/bokchoy.png" alt="Bok choy" class="icon-img" />
+            <img src="../archive/platter.png" alt="Mushroom platter" class="icon-img" />
+            <img src="../archive/udon.png" alt="Udon noodles" class="icon-img" />
+          </div>
+        </div>
+      </article>
+
+      <!-- STORY 2: 5TH AVE / PUFFER -->
+      <article class="entry" id="fifth-ave">
+        <figure class="entry-media">
+          <img src="../archive/waterfall display.jpg" alt="Shimmering water display on 5th Ave" />
+        </figure>
+
+        <div class="entry-text">
+          <h2 class="headline">5th ave is so surreal!</h2>
+          <p class="copy">
+            Sunday + rain = me shopping for a puffer for the season. There I was, a long way from home (I’m being dramatic, it was like 25 blocks), surrounded with more things to buy than my pockets could afford. Naturally, I was lost, trying to find my way to UNIQLO, when I came across this water display. When I photographed it, it looked like a pool of gold, glistening down all sparkly. I love sparkles.
+          </p>
+        </div>
+
+        <div class="entry-choices">
+          <p class="pick-label">what are you wearing?</p>
+          <div class="story-icons">
+            <img src="../archive/camohoodie.png" alt="Camo hoodie" class="icon-img" />
+            <img src="../archive/puffer.png" alt="Black puffer jacket" class="icon-img" />
+            <img src="../archive/acnestudiosscarf.png" alt="Cozy scarf" class="icon-img" />
+          </div>
+        </div>
+      </article>
+
+      <!-- STORY 3: LATTE -->
+      <article class="entry" id="latte">
+        <figure class="entry-media">
+          <img src="../archive/coffee.jpg" alt="Iced latte by a rainy window" />
+        </figure>
+
+        <div class="entry-text">
+          <h2 class="headline">an iced latte a day, keeps me awake</h2>
+          <p class="copy">
+            Rain on the sidewalk, umbrella dripping, and I still order it iced. Cold glass, clink of cubes, oat milk turning the espresso a soft caramel. I take the first sip and my brain finally switches on. The window fogs a little, people float by in shiny coats, and I start scribbling notes I did not know I had in me. If you want to make it extra good, add a tiny pinch of cardamom and cinnamon. The corner café on 3rd Ave feels like a study nook today, just the right kind of hum. I leave with chilly hands and a warm mind. Perfect trade.
+          </p>
+        </div>
+
+        <div class="entry-choices">
+          <p class="pick-label">build your latte</p>
+          <div class="story-icons">
+            <img src="../archive/icedcoffee2.png" alt="Iced coffee" class="icon-img" />
+            <img src="../archive/oatmilk.png" alt="Oat milk carton" class="icon-img" />
+            <img src="../archive/vanillasyrup.png" alt="Vanilla syrup" class="icon-img" />
+          </div>
+        </div>
+      </article>
+
     </main>
 
-    <aside class="playlist-column" aria-labelledby="playlist-label">
-      <section id="playlist">
-        <h3 class="section-label" id="playlist-label">Playlist #3</h3>
-        <ul class="tracks">
-          <li>Jack Johnson — Banana Pancakes</li>
-          <li>SZA — Good Days</li>
-          <li>TV Girl — Lovers Rock</li>
-          <li>Men I Trust — Show Me How</li>
-          <li>Clairo — Amoeba</li>
-          <li>Japanese Breakfast — Be Sweet</li>
-          <li>Novo Amor — Anchor</li>
-        </ul>
-      </section>
-    </aside>
+    <section id="playlist" class="playlist-bottom" aria-labelledby="playlist-label">
+      <h3 class="section-label" id="playlist-label">Playlist #3</h3>
+      <ul class="tracks">
+        <li>Jack Johnson — Banana Pancakes</li>
+        <li>SZA — Good Days</li>
+        <li>TV Girl — Lovers Rock</li>
+        <li>Men I Trust — Show Me How</li>
+        <li>Clairo — Amoeba</li>
+        <li>Japanese Breakfast — Be Sweet</li>
+        <li>Novo Amor — Anchor</li>
+      </ul>
+    </section>
   </div>
 
   <footer class="page">
     <p class="credit">© Weekends with Jui</p>
   </footer>
 
-</body> 
-
 </body>
 </html>
+
+
