@@ -1,0 +1,148 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.archive-body {
+  background: #000000;          
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+.archive-grid {
+  column-count: 2;
+  column-gap: 0;
+  width: 100vw;
+}
+
+.archive-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  break-inside: avoid;
+ filter: grayscale(100%) contrast(1.1) brightness(0.95);
+}
+
+.paper-overlay {
+  position: fixed;
+  inset: 0;
+  background-image: url("../archive/AdobeStock_274518854.jpeg");
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: multiply;
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 5;
+}
+
+
+.masthead-top {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  padding: 0 32px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  z-index: 12;
+  pointer-events: none; 
+}
+
+.mast-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.info {
+  font-family: "Shizuru", system-ui;
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: auto;
+}
+
+.home-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.camera-icon {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.camera-icon:hover {
+  transform: translateY(-3px) rotate(-4deg);
+}
+
+
+.center-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  pointer-events: none;
+  padding: 12px 12px;
+}
+
+.title {
+  font-family: "Shizuru", serif;
+  font-size: 90px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: whitesmoke;
+  white-space: nowrap;
+}
+
+.entry-label {
+  margin-top: 8px;
+  font-family: "Shizuru", system-ui;
+  font-size: 40px;
+  color: whitesmoke;
+}
+
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+  .info {
+    font-size: 24px;
+  }
+  .camera-icon {
+    height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .masthead-top {
+    padding: 0 16px;
+  }
+
+  .title {
+    font-size: 42px;
+  }
+
+  .entry-label {
+    font-size: 18px;
+  }
+}
