@@ -1,0 +1,138 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: #241313;
+  color: #ffc4b3;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* CONTAINER */
+.page {
+  width: 100%;
+  padding: 32px 48px;
+}
+
+/* MASTHEAD */
+.masthead-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.info {
+  font-family: "Shizuru", system-ui;
+  font-size: 40px;
+}
+
+.title {
+  font-family: "Almendra SC", serif;
+  font-size: 90px;
+  text-align: center;
+  letter-spacing: 6px;
+}
+
+.camera-wrapper {
+  pointer-events: auto;
+}
+
+.camera-icon {
+  height: 60px;
+  width: auto;
+  transition: transform 0.25s ease;
+}
+
+.camera-icon:hover {
+  transform: translateY(-3px) rotate(-4deg);
+}
+
+hr {
+  border: 1px solid #ffc4b3;
+  margin: 20px auto 40px auto;
+  width: 90%;
+}
+
+/* HEADLINE */
+.headline {
+  font-family: "Shizuru", sans-serif;
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 6px;
+  margin-top: 0px;
+  letter-spacing: 3px;
+}
+
+/* DESCRIPTION */
+.copy {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #ffe8d2;
+}
+hr {
+  margin: 0px auto 16px auto;
+}
+
+.headline {
+  margin-top: 0px; 
+  margin-bottom: 6px;
+}
+
+.copy {
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+
+/* ALBUM GRID */
+.album-grid {
+  margin: 0 auto 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px); /* 300px EXACT size */
+  justify-content: center;
+  gap: 32px;                                       /* even spacing */
+}
+
+/* individual album cards */
+.album-card {
+  width: 300px;
+  text-decoration: none;
+  color: #ffc4b3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* album cover images */
+.album-card img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease,
+              filter 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.album-card:hover img {
+  transform: translateY(-6px) scale(1.06);
+  filter: brightness(110%);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+}
+
+/* text label under albums */
+.album-title {
+  font-size: 20px;
+  text-align: center;
+  opacity: 0.9;
+  font-family: "Shizuru";
+}

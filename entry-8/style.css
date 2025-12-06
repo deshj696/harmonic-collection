@@ -1,0 +1,334 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #102230;
+  --text: #fef3df;
+  --accent: #fef3df;
+  --border: #fef3df;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: "Montserrat", sans-serif;
+  color: var(--text);
+}
+
+.page {
+  width: 100%;
+  background-color: var(--bg);
+  padding: 32px 48px;
+}
+
+/* MASTHEAD */
+
+.masthead-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.masthead-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info {
+  font-family: "Shizuru", system-ui;
+  font-size: 30px;
+  color: var(--text);
+}
+
+.title {
+  font-family: "Almendra SC", serif;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: var(--text);
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+hr {
+  border: 1px solid var(--border);
+  margin-top: 8px;
+}
+
+/* HOME CAMERA BUTTON */
+
+.home-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.camera-icon {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.25s ease, filter 0.25s ease;
+  cursor: pointer;
+}
+
+.camera-icon:hover {
+  transform: translateY(-3px) rotate(-4deg);
+}
+
+/* LAYOUT */
+
+.content-layout.centered-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  margin-top: 40px;
+}
+
+.photo-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 320px;
+  flex: 1;
+}
+
+.photo-frame {
+  width: 100%;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+  filter: brightness(95%) contrast(105%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.photo-frame img:hover {
+  transform: scale(1.03);
+  filter: brightness(100%) contrast(110%);
+}
+
+.center-text-column {
+  max-width: 640px;
+  flex: 2;
+}
+
+/* STORY TEXT */
+
+.story {
+  background-color: transparent;
+}
+
+.single-story {
+  padding: 8px 0;
+}
+
+.headline {
+  font-family: "Shizuru", system-ui;
+  font-size: 65px;
+  color: var(--accent);
+  margin: 8px 16px;
+  text-transform: lowercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.copy {
+  font-size: 16px;
+  color: var(--text);
+  margin: 16px 0;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.center-headline {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.center-copy {
+  text-align: justify;
+  text-indent: 1em;
+}
+
+/* PLAYLIST */
+
+.playlist-column {
+  flex: 1;
+  padding-left: 56px;
+  padding-top: 20px;
+}
+
+#playlist {
+  width: 100%;
+}
+
+.playlist-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.vinyl-small {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.vinyl-small:hover {
+  transform: rotate(-360deg) scale(1.5);
+}
+
+.playlist-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.section-label {
+  font-family: "Almendra SC", serif;
+  font-size: 42px;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.tracks {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tracks li {
+  position: relative;
+  padding-left: 25px;
+}
+
+.tracks li::before {
+  content: "♪";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+  opacity: 0.7;
+}
+
+.tracks li a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 15px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.tracks li a:hover {
+  border-bottom: 1px solid var(--accent);
+  color: #ffffff;
+}
+
+/* FOOTER */
+
+.credit {
+  font-size: 12px;
+  color: var(--text);
+  text-align: center;
+  margin-top: 40px;
+  opacity: 0.9;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .page {
+    padding: 24px 24px;
+  }
+
+  .content-layout.centered-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .photo-column {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .photo-frame {
+    max-width: 45%;
+  }
+
+  .center-text-column {
+    max-width: 100%;
+  }
+
+  .playlist-column {
+    padding-left: 0;
+    padding-top: 24px;
+    width: 100%;
+  }
+
+  .playlist-layout {
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 20px 16px;
+  }
+
+  .info {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .headline {
+    font-size: 32px;
+  }
+
+  .copy {
+    font-size: 14px;
+    margin: 12px 0;
+  }
+
+  .photo-frame {
+    max-width: 100%;
+  }
+
+  .playlist-layout {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .playlist-text {
+    align-items: center;
+  }
+
+  .vinyl-small {
+    width: 120px;
+    height: 120px;
+  }
+}
