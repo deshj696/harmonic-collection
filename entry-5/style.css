@@ -2,8 +2,8 @@
 
 
 :root {
-  --brown: #79443B;   /* Bole */
-  --vanilla: #CCC0AC; /* Dun */
+  --brown: #472b26;   
+  --vanilla: #CCC0AC; 
 }
 
 html, body {
@@ -19,7 +19,6 @@ html, body {
 }
 
 
-
 .masthead-top {
   display: flex;
   align-items: center;
@@ -29,17 +28,17 @@ html, body {
 
 .info {
   font-family: "Shizuru", system-ui;
-  font-size: 25px;
-  color: #E9DF9E;
+  font-size: 30px;
+  color: #CCC0AC;
 }
 
 .title {
   font-family: "Almendra SC", serif;
-  font-size: 96px;
+  font-size: 95px;
   text-transform: uppercase;
   text-align: center;
-  color: #E9DF9E;
-  letter-spacing: 3px;
+  color: #CCC0AC;
+  letter-spacing: 6px;
 }
 
 .home-link {
@@ -47,7 +46,7 @@ html, body {
 }
 
 .camera-icon {
-  height: 90px;
+  height: 60px;
   width: auto;
   object-fit: contain;
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -64,7 +63,6 @@ hr {
   border: 1px solid var(--vanilla);
 }
 
-/* LAYOUT ----------------------------------------------------- */
 
 .content-layout {
   display: flex;
@@ -80,7 +78,6 @@ hr {
   border-left: 2px solid var(--vanilla);
 }
 
-/* STORIES ---------------------------------------------------- */
 
 .stories {
   display: flex;
@@ -117,7 +114,6 @@ hr {
   line-height: 1.55;
 }
 
-/* DROP CAP */
 .story-text .copy:first-of-type:first-letter {
   font-family: "Almendra SC", serif;
   float: left;
@@ -128,7 +124,6 @@ hr {
   color: var(--vanilla);
 }
 
-/* IMAGES ----------------------------------------------------- */
 
 .story-media {
   width: 60%;
@@ -149,13 +144,11 @@ hr {
   transition: transform .3s ease, opacity .3s ease;
 }
 
-/* Hover vibe */
 .photo-row img:hover {
   transform: scale(1.05);
   opacity: 0.92;
 }
 
-/* PLAYLIST ---------------------------------------------------- */
 
 .section-label {
   margin-bottom: 12px;
@@ -178,7 +171,6 @@ hr {
   color: var(--vanilla);
 }
 
-/* FOOTER ------------------------------------------------------ */
 
 .credit {
   margin-top: 32px;

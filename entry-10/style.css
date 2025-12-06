@@ -28,12 +28,12 @@ html, body {
 
 .info {
   font-family: "Shizuru", system-ui;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .title {
   font-family: "Almendra SC", serif;
-  font-size: 90px;
+  font-size: 95px;
   text-align: center;
   letter-spacing: 6px;
 }
