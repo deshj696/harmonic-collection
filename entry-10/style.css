@@ -4,26 +4,44 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-image: url("../archive/wallpaper.jpg");
+  background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+}
 
-html, body {
+html,
+body {
   background-color: #241313;
   color: #ffc4b3;
   font-family: "Montserrat", sans-serif;
 }
 
-/* CONTAINER */
+
 .page {
   width: 100%;
   padding: 32px 48px;
 }
 
-/* MASTHEAD */
+
+#masthead {
+  margin-bottom: 16px;
+}
+
 .masthead-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+}
+
+.masthead-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .info {
@@ -32,20 +50,24 @@ html, body {
 }
 
 .title {
-  font-family: "Almendra SC", serif;
-  font-size: 95px;
+  font-family: "Shizuru", serif;
+  font-size: 90px;
   text-align: center;
   letter-spacing: 6px;
 }
 
-.camera-wrapper {
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   pointer-events: auto;
 }
 
 .camera-icon {
   height: 60px;
   width: auto;
-  transition: transform 0.25s ease;
+  object-fit: contain;
+  transition: transform 0.25s ease, filter 0.25s ease;
 }
 
 .camera-icon:hover {
@@ -54,85 +76,86 @@ html, body {
 
 hr {
   border: 1px solid #ffc4b3;
-  margin: 20px auto 40px auto;
+  margin: 12px auto 24px auto;
   width: 90%;
 }
 
-/* HEADLINE */
-.headline {
-  font-family: "Shizuru", sans-serif;
-  font-size: 100px;
-  text-align: center;
-  margin-bottom: 6px;
-  margin-top: 0px;
-  letter-spacing: 3px;
-}
 
-/* DESCRIPTION */
-.copy {
-  max-width: 800px;
-  margin: 0 auto 40px auto;
-  text-align: center;
-  line-height: 1.6;
-  font-size: 16px;
-  color: #ffe8d2;
-}
-hr {
-  margin: 0px auto 16px auto;
-}
-
-.headline {
-  margin-top: 0px; 
-  margin-bottom: 6px;
-}
-
-.copy {
-  margin-top: 0px;
-  margin-bottom: 32px;
-}
-
-
-/* ALBUM GRID */
-.album-grid {
-  margin: 0 auto 60px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 300px); /* 300px EXACT size */
-  justify-content: center;
-  gap: 32px;                                       /* even spacing */
-}
-
-/* individual album cards */
-.album-card {
-  width: 300px;
-  text-decoration: none;
-  color: #ffc4b3;
+.wrapped-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-}
-
-/* album cover images */
-.album-card img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.25s ease,
-              filter 0.25s ease,
-              box-shadow 0.25s ease;
-}
-
-.album-card:hover img {
-  transform: translateY(-6px) scale(1.06);
-  filter: brightness(110%);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
-}
-
-/* text label under albums */
-.album-title {
-  font-size: 20px;
   text-align: center;
-  opacity: 0.9;
+  margin-top: 8px;
+  margin-bottom: 48px;
+}
+
+.headline {
+  font-family: "Shizuru", sans-serif;
+  font-size: 45px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.copy {
+  max-width: 700px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #ffe8d2;
+  margin-bottom: 32px;
+}
+
+/* ALBUM DISPLAY */
+.album-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#album-cover {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.25s ease, filter 0.25s ease, box-shadow 0.25s ease;
+}
+
+#album-cover:hover {
+  transform: translateY(-6px) scale(1.05);
+  filter: brightness(110%);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+}
+
+#album-link {
+  font-family: "Shizuru", system-ui;
+  font-size: 22px;
+  text-decoration: none;
+  color: #ffc4b3;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+}
+
+#album-link:hover {
+  border-color: #ffc4b3;
+}
+
+.hint-text {
+  font-size: 25px;
+  opacity: 0.8;
   font-family: "Shizuru";
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.credit {
+  font-size: 14px;
+  opacity: 0.8;
 }
