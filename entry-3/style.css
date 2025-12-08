@@ -1,23 +1,21 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-
-html,
-body {
-  background-color: #8C3424;              
-  color: #eea789;             
+html, body {
+  background-color: #591a0f;
+  color: #ffe1d5;
   font-family: "Montserrat", sans-serif;
 }
 
 .page {
   width: 100%;
   padding: 32px 48px;
-  background-color: #8C3424;
+  background-color: #591a0f;
 }
+
 
 
 .masthead-top {
@@ -35,26 +33,23 @@ body {
 .info {
   font-family: "Shizuru", system-ui;
   font-size: 30px;
-  color: #eea789;
+  color: #ffe1d5;
 }
 
 .title {
   font-family: "Almendra SC", serif;
   font-size: 95px;
-  line-height: 1;
   text-transform: uppercase;
+  color: #ffe1d5;
   text-align: center;
-  color: #eea789;
   letter-spacing: 6px;
 }
-
 
 .home-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 
 .home-link {
   display: inline-flex;
@@ -64,25 +59,17 @@ body {
 
 .camera-icon {
   height: 60px;
-  width: auto;
-  object-fit: contain;
-  transition: transform 0.25s ease, filter 0.25s ease;
+  transition: transform 0.25s;
 }
-
 
 .home-link:hover .camera-icon {
- transform: translateY(-3px) rotate(-3deg);
-}
-
-.home-wrapper:hover .home-label {
-  transform: translateY(-2px);
+  transform: translateY(-3px) rotate(-3deg);
 }
 
 hr {
   margin-top: 25px;
-  border: 1px solid #eea789;
+  border: 1px solid #ffe1d5;
 }
-
 
 .entries {
   display: flex;
@@ -97,24 +84,15 @@ hr {
   align-items: flex-start;
 }
 
-.entry-media {
-  flex: 1;
-  min-width: 260px;
-}
-
 .entry-media img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
+  width: 500px;
+  height: 300px;
   object-fit: cover;
-  display: block;
-  transition:
-    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
-    filter 0.6s ease;
-  will-change: transform, filter;
+  transition: transform 0.5s, filter 0.5s;
 }
 
-.entry-media:hover img {
-  transform: translateY(-6px) rotate(-3deg) scale(1.02);
+.entry-media img:hover {
+  transform: translateY(-6px) scale(1.02);
   filter: brightness(1.05);
 }
 
@@ -125,154 +103,73 @@ hr {
   justify-content: center;
 }
 
-.entry-choices {
-  flex: 0.9;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+.headline {
+  font-family: "Shizuru", system-ui;
+  color: #ffe1d5;
+  font-size: 48px;
+  margin: 8px 16px;
+}
+
+.copy {
+  margin: 6px 16px;
+  font-size: 16px;
+  color: #ffe1d5;
+  margin-right: 30px;
+}
+
+.copy:first-letter {
+  font-family: "Almendra SC", serif;
+  font-size: 3em;
+  float: left;
+  padding-right: 6px;
+  line-height: 0.8;
 }
 
 
 .pick-label {
   font-family: "Shizuru", system-ui;
   font-size: 32px;
-  text-transform: lowercase;
-  margin: 8px 16px 4px 0;
-  color: #eea789;
+  color: #ffe1d5;
+  margin-bottom: 8px;
 }
-
-
-.headline {
-  margin: 8px 16px;
-  font-family: "Shizuru", system-ui;
-  font-size: 48px;
-  text-transform: lowercase;
-  color: #eea789;
-  padding-bottom: 4px;
-}
-
-.copy {
-  margin: 8px 16px 0 16px;
-  font-size: 16px;
-  color: #eea789;
-}
-
-.entry-text .copy:first-of-type:first-letter {
-  font-family: "Almendra SC", serif;
-  float: left;
-  font-size: 3em;
-  line-height: 0.9;
-  padding-right: 0.12em;
-  padding-top: 0.08em;
-  color: #eea789;
-}
-
 
 .story-icons {
   display: flex;
-  gap: 12px;
-  margin: 6px 0 0 0;
+  justify-content: center;
 }
 
 .icon-img {
-  width: 140px;
-  height: 140px;
-  object-fit: contain;
-  aspect-ratio: 1 / 1;     
-  padding: 10px;
+  width: 220px;
+  height: 240px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  margin-top: 50px;
 }
 
 
-.icon-img:hover {
-  transform: translateY(-4px) rotate(-15deg);
-}
-
-
-.playlist-bottom {
-  margin-top: 56px;
-  border-top: 2px solid #8C3424;
-  padding-top: 24px;
-}
-
-.section-label {
-  margin-bottom: 12px;
-  font-family: "Almendra SC", serif;
-  font-size: 28px;
-  text-transform: uppercase;
-  color: #eea789;
-}
-
-.tracks {
-  list-style-type: square;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-left: 16px;
-}
-
-.tracks li {
-  font-size: 16px;
-  color: #eea789;
-}
 
 
 .credit {
   margin-top: 32px;
   font-size: 12px;
-  color: #eea789;
   text-align: center;
+  color: #ffe1d5;
 }
 
 
-@media (max-width: 960px) {
-  .title {
-    font-size: 72px;
-  }
-}
 
 @media (max-width: 860px) {
-  .page {
-    padding: 24px;
-  }
-
   .entry {
     flex-direction: column;
-  }
-
-  .entry-media {
-    min-width: 0;
-  }
-
-  .entry-choices {
-    align-items: flex-start;
   }
 }
 
 @media (max-width: 600px) {
-  .page {
-    padding: 20px 16px;
-  }
-
-  .masthead-top {
-    flex-direction: column;
-    gap: 12px;
-  }
-
   .title {
     font-size: 54px;
   }
 
-  .info {
-    font-size: 24px;
-  }
-
-  .camera-icon {
-    height: 60px;
-  }
-
   .icon-img {
-    width: 90px;
-    height: 90px;
+    width: 110px;
   }
 }
