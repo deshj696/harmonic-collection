@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -105,7 +105,6 @@ hr {
   margin-bottom: 32px;
 }
 
-/* ALBUM DISPLAY */
 .album-display {
   display: flex;
   flex-direction: column;
@@ -149,7 +148,6 @@ hr {
   font-family: "Shizuru";
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   margin-top: 12px;

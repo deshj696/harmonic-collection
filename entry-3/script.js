@@ -27,13 +27,13 @@ latteImg.addEventListener("click", function () {
 
 
 let hotpotPics = [
-  "../archive/hopo1.png",  // corn
-  "../archive/hopo2.png",  // bok choy
-  "../archive/hopo3.png",  // beef rolls
-  "../archive/hopo4.png",  // tteok
-  "../archive/hopo5.png",  // ramen
-  "../archive/hopo6.png",  // fish cake
-  "../archive/hopo7.png"   // tofu
+  "../archive/hopo1.png",  
+  "../archive/hopo2.png",  
+  "../archive/hopo3.png",  
+  "../archive/hopo4.png",  
+  "../archive/hopo5.png",  
+  "../archive/hopo6.png",  
+  "../archive/hopo7.png"   
 ];
 
 let hotpotImg = document.getElementById("malatang-img");
@@ -52,12 +52,12 @@ hotpotImg.addEventListener("click", function () {
 
 
 let outfitPics = [
-  "../archive/fit1.png",  // grey hoodie
-  "../archive/fit2.png",  // Acne Studios scarf
-  "../archive/fit3.png",  // camo shirt
-  "../archive/fit4.png",  // Stussy beanie
-  "../archive/fit5.png",  // taupe wool coat
-  "../archive/fit6.png"   // polka dot blouse
+  "../archive/fit1.png",  
+  "../archive/fit2.png",  
+  "../archive/fit3.png",  
+  "../archive/fit4.png",  
+  "../archive/fit5.png",  
+  "../archive/fit6.png"   
 ];
 
 let outfitImg = document.getElementById("outfit-img");
